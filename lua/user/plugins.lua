@@ -48,6 +48,7 @@ return packer.startup(function(use)
 	use({ "numToStr/Comment.nvim", commit = "2c26a00f32b190390b664e56e32fd5347613b9e2" })
 	use({ "JoosepAlviste/nvim-ts-context-commentstring", commit = "88343753dbe81c227a1c1fd2c8d764afb8d36269" })
 	use({ "kyazdani42/nvim-web-devicons", commit = "8d2c5337f0a2d0a17de8e751876eeb192b32310e" })
+	--use({ "nvim-tree/nvim-tree.lua", commit = "f5d970d4506f385b29534252d8c15a782fa53034" })
 	use({ "kyazdani42/nvim-tree.lua", commit = "bdb6d4a25410da35bbf7ce0dbdaa8d60432bc243" })
 	use({ "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" })
 	use({ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" })
@@ -57,11 +58,15 @@ return packer.startup(function(use)
 	use({ "lewis6991/impatient.nvim", commit = "969f2c5c90457612c09cf2a13fee1adaa986d350" })
 	use({ "lukas-reineke/indent-blankline.nvim", commit = "6177a59552e35dfb69e1493fd68194e673dc3ee2" })
 	use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
-	use("folke/which-key.nvim")
+    use("folke/which-key.nvim")
+    use("xiyaowong/nvim-transparent")
+    --use({'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'})
+    use("ThePrimeagen/vim-be-good")
+    use("ggandor/leap.nvim")
 
 	-- Colorschemes
 	use({ "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" })
-	use("lunarvim/darkplus.nvim")
+	-- use("lunarvim/darkplus.nvim")
 
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" }) -- The completion plugin

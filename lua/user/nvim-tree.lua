@@ -1,3 +1,5 @@
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
   return
@@ -10,7 +12,7 @@ end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
-nvim_tree.setup {
+require("nvim-tree").setup({
   update_focused_file = {
     enable = true,
     update_cwd = true,
@@ -55,7 +57,6 @@ nvim_tree.setup {
   },
   view = {
     width = 30,
-    height = 30,
     side = "left",
     mappings = {
       list = {
@@ -65,4 +66,4 @@ nvim_tree.setup {
       },
     },
   },
-}
+})
